@@ -8,7 +8,7 @@ def sub(x, y):
     pass
 
 def mult(x, y):
-    pass
+    return x*y
 
 def div(x, y):
     pass
