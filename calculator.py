@@ -10,8 +10,11 @@ def sub(x, y):
 def mult(x, y):
     pass
 
-def div(x, y):
-    pass
+def div(x: int, y: int) -> float:
+    """Divides the two numbers. Raises ValueError if the divisor is zero."""
+    if y == 0:
+        raise ValueError("Divisor cannot be zero")
+    return x / y
 
 if __name__ == '__main__':
     if len(sys.argv) != 3:
